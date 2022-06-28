@@ -1,0 +1,53 @@
+body
+{
+background-color: plum;
+}
+#student
+{
+    height:80px;
+    width:50%;
+    font-size: 14px;
+    border: 2px solid black;
+}
+#student_msg
+{
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+}
+#numbers
+{
+    height:auto;
+    width:50%;
+    border: 2px solid black;
+    margin-top:60px;
+    background-color: yellow;
+    display: flex;
+}
+#num1
+{
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    height: 20px;
+    width:30px;
+}
+#num2
+{
+    background-color: white;
+    margin: 20px 0;
+    padding: 20px;
+    height: 20px;
+    width:30px;
+}
+#totals
+{
+    height: 20px;
+    width:100px;
+    
+    margin: 20px 0;
+    padding: 20px;
+    background-color:white;
+   
+}
+

@@ -1,0 +1,425 @@
+/* selection will highlight selected text on webpage */
+::selection {
+    color: plum;
+    background: rgb(247, 247, 139);
+}
+::marker { 
+    color: red;
+    font-size: 23px;
+}
+button
+{
+    cursor: pointer;
+}
+header nav
+{
+    display: flex;
+}
+div.close
+{
+    width: 24px;
+    height: auto;
+}
+#close_button
+{
+    height: auto;
+    width:24px;
+    display: none;
+}
+section.mainsection
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    /* background-color: plum; */
+}
+div #category_list
+{
+    background-color:transparent;
+}
+div.quicklist
+{
+    display: flex;
+}
+div.ham
+{
+    width:32px;
+    margin: auto;
+}
+div.ham #hr1,#hr2,#hr3
+{
+    background-color:black;
+    margin: 0px;
+}
+#check
+{
+    margin: auto;
+    width: 15px;
+    height: 30px;
+}
+section.side_nav
+{
+    margin-top: 25px;
+}
+ section.side_nav .nav_container
+{
+    width:auto;
+    height:auto;
+}
+section.side_nav nav ul li
+{
+    list-style: none;
+    margin: 10px;
+} 
+/* .category_hide
+{
+display: none;
+} */
+/* ************************side nav design end  */
+section.mainsection .main
+{
+    justify-content: center;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+}
+/* before pseudo class will add content before the main content */
+section.mainsection .main_container .new::before,
+section.mainsection .main_container2 .new::before
+{
+    content: "New";
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    background-color: rgba(240, 25, 25, 0.774);
+    border-radius:14px;
+    width:50px;
+    color: white;
+    line-height: 1.6;
+    text-transform:uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    height: 25px;
+    margin: 10px 5px;
+    text-align: center;
+    padding: 0px 10px;
+}
+section.mainsection .main .main_container,.main_container2
+{
+    display: flex;
+    width: 100%;
+    position: relative;
+    top:0;
+    height: 100%;
+    overflow:hidden;
+    justify-content: space-between;
+    /* background-color: rgba(202, 202, 202, 0.1); */
+}
+section.mainsection .main .main_container #product_grid,
+section.mainsection .main .main_container2 #product_grid
+{
+    width: 33%;
+    justify-content: center;
+    height: auto;
+    background-color: rgba(202, 202, 202, 0.1);
+    margin-bottom: 10px;
+    top: 0;
+    position:relative;
+    text-align: -webkit-center;
+    margin-right: 10px;
+}
+section.mainsection .main .main_container #product_grid:hover,
+section.mainsection .main .main_container2 #product_grid:hover
+{
+    box-shadow: 1px 0px 5px rgb(156 154 154);
+    cursor: pointer;
+    border-radius: 2px;
+}
+section.mainsection .main .main_container img,
+section.mainsection .main .main_container2 img
+{
+    height:300px;
+}
+
+section.mainsection .main .main_container #product_grid:hover button,
+section.mainsection .main .main_container2 #product_grid:hover button
+{
+    background-color: antiquewhite;
+}
+#quantity_input
+{
+    width:50px;
+    margin: 8px;
+}
+div.show_button
+{
+    margin-bottom: 5px;
+    text-align: -webkit-auto;
+}
+div.img_container
+{
+    height: 250px;
+}
+div.filterbybrand
+{
+    display: grid;
+}
+div.filterbybrand #Brand_checkbox
+{
+    padding-left: 0px;
+    margin: 0px;
+    width: auto;
+    margin-right: 5px;
+    height: 25px;
+}
+div.brand_span>span
+{
+    display: flex;
+}
+div #show_hide
+{
+    display: none;
+    z-index: 1;
+    position:relative;
+    height: auto;
+}
+div #show_hide li a 
+{
+text-decoration: none;    
+}
+
+div #category_list :hover #show_hide
+{
+display: block;
+}
+p
+{
+    margin:0;
+}
+div.info
+{
+    display: flex;
+}
+div.info #quantity_input
+{
+    width: 120px;
+}
+/* div.below
+{
+    width: 50%;
+    margin: auto;
+    margin-top: 60px;
+    text-align: center;
+    background-color: rgba(202, 202, 202, 0.1);
+} */
+p#signup_p
+{
+    margin: 20px;
+}
+h4
+{
+    margin: auto;
+}
+div.filter
+{
+    display: flex;
+}
+select
+{
+    height: 35px;
+    width: 100px;
+    margin-top: 15px;
+    background-color: lightpink;
+}
+section.mainsection .main .main_container .grid1 h3
+{
+    margin: 0;
+} 
+p#product_desc
+ {
+    text-align:start;
+    margin-bottom: 9px;
+ }
+ section.pages
+ {
+    display: flex;
+    justify-content: center;
+ }
+ div#page_no 
+ {
+     margin-right:10px;
+     /* background-color: yellow; */
+     width:30px;
+     cursor: pointer;
+ }
+ div#page_no:hover
+ {
+     background-color: lightblue;
+ }
+ 
+@media screen and (max-width:960px) 
+{
+    header .container div#nav div#nav_div
+    {
+        position: fixed;
+        z-index: 99;
+        right: -320px;
+        /* right: -520px; */
+        overflow: hidden;
+        width: auto;
+        height:auto;
+        height: 100%;
+        box-shadow: 0px 2px 4px 1px rgb(0 0 0 / 12%);
+        transition: right 300ms ease-out;
+        display: inline-flex
+    } 
+    div.ham {
+        width: 32px;
+        margin: auto;
+    }
+    header .container div#nav div#nav_div #nav_items {
+        height: 100vh;
+        /* height: auto; */
+        background-color: #FFF;
+        position: relative;
+        width: auto;
+        display: flex;
+        border:1px solid blue;
+    }
+    header .container div#nav div#nav_div #nav_items nav
+    {
+        height: 100%;
+        width: auto;
+        margin: auto;
+        display: block;
+    } 
+    header .container div#nav div#nav_div #nav_items #nav_li
+    {
+    /* margin-top: 30px; */
+    color: black;
+    justify-content: center;
+    line-height: 30px;
+    width: 200px;
+    text-align: center;
+    height: auto;
+    display: grid;
+    direction: ltr;
+    } 
+header .container div#nav div#nav_div #nav_items #nav_li li a
+{
+      display: inline-block;
+} 
+div.close 
+{    
+    width: 15px;
+    height: 15px;
+    direction: ltr;
+    justify-content: center;
+    display: flex;
+}
+div.close #close_button
+{
+    display: none;
+}    
+section.side_nav
+{
+
+    display: none;
+}
+ div.filter 
+ {
+     display: flex;
+     justify-content: center;
+ } 
+ section.mainsection .main .main_container,
+ section.mainsection .main .main_container2
+ {
+    flex-wrap: wrap;
+    justify-content: center;
+ }
+ section.mainsection .main .main_container #product_grid,
+ section.mainsection .main .main_container2 #product_grid
+ {
+    /* margin: auto; */
+    margin:10px;
+    width: 46%;
+    display: flex;
+    margin-bottom: 8px;
+    flex-direction: column;
+}
+section.mainsection .main .main_container img, 
+section.mainsection .main .main_container2 img {
+    object-fit: scale-down;
+    height: auto;
+}
+div.below {
+    width: auto;
+}
+}
+@media screen and (min-width:320px) and (max-width:576px){
+section.mainsection .main .main_container, .main_container2 
+{
+    display: block;
+    width: -webkit-fill-available;
+    margin: auto;
+}
+section.mainsection .main .main_container #product_grid img#product_img
+{
+    object-fit: scale-down;
+    height: 300px;
+}
+section.mainsection .main .main_container .grid1, 
+section.mainsection .main .main_container .grid2, 
+section.mainsection .main .main_container .grid3, 
+section.mainsection .main .main_container2 .grid1, 
+section.mainsection .main .main_container2 .grid2, 
+section.mainsection .main .main_container2 .grid3
+{
+    margin: auto;
+    width: 100%;
+}
+div.below
+{
+    width: auto;
+}
+div.below >form #newsletter_input
+{
+        margin-bottom: 8px;
+}
+div .quicklist_menu
+{
+    height: auto;
+    z-index: 99;
+    left: -370px;
+    overflow: hidden;
+    position: absolute;
+    transition: left 300ms ease-out;
+    width:auto;
+    box-shadow: 0px 2px 4px 1px rgb(0 0 0 / 12%);
+    background-color: wheat;
+}
+div.close #close_div1 {
+    width: auto;
+    /* width:15px; */
+    height: 15px;
+    /* display: block; */
+}
+div.close #close_button {
+    width: 15px;
+    display: none;
+}
+div.quicklist_menu  #ul_small_screen
+{
+    display: grid;
+    width: 200px;
+    text-align: center;
+    font-size:12px;
+}
+div .links
+{
+    height: 25px;
+}
+}

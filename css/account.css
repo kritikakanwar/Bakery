@@ -1,0 +1,196 @@
+#Main
+{
+    width:60%;
+    margin:auto;
+    display: flex;
+}
+section.side_navigation
+{
+    width:60%;
+    height: 200px;
+    background-color: rgb(202 202 202 / 8%);
+    display: grid;
+    justify-content: center;
+    box-shadow: 2px 2px 1px 1px rgb(202 202 202 / 30%);
+    border-radius: 20px;
+    position: relative;
+    margin-right: 12px;
+}
+section.cartpage
+{
+    margin: 50px auto auto auto;
+}
+section.cart_info
+{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    /* margin-top:49px; */
+}
+section.cart_info img
+{
+    width: 200px;
+}
+section.side_navigation ul
+{
+    list-style: none;
+}
+section.side_navigation ul li a
+{
+    text-decoration: none;
+}
+hr{
+    width: auto;
+    background-color: aliceblue;
+    height: auto;
+}
+section.ShippingDetail_section
+{
+    width: 100%;
+    position: relative;
+}
+#Main #Registration_account_form
+{
+    /* background-color: rgb(76 175 80 / 10%); */
+    background-color: rgb(202 202 202 / 8%);
+    display: grid;
+    justify-content: center;
+    box-shadow: 2px 2px 1px 1px rgb(202 202 202 / 30%);
+    border-radius: 20px;
+}
+form#Registration_account_form
+{
+    /* padding: 30px; */
+    padding-left: 50px;
+    padding-right: 50px;
+}
+div#Address_div,div#Correspondence_address_div
+{
+    width:100%;
+    display: contents;
+    margin: 0;
+}
+input:focus{
+    background-color: azure;
+}
+div#Address_div #form_input,div#Correspondence_address_div #form_input
+{
+    width: 100%;
+    margin-left: 0px;
+}
+select#form_select,select#district_select
+{
+    height: 30px;
+    width: 100%;
+}
+div.shipping
+{
+    display: flex;
+    justify-content: space-between;
+}
+div.shipping>span
+{
+    cursor: pointer;
+}
+div.shipping>h3
+{
+    margin:0;
+}
+div#same_address
+{
+    display: flex;
+    /* justify-content: start; */
+    align-items: center;
+}
+div#same_address #address_checkbox
+{
+width: auto;
+margin: 0;
+margin-right: 5px;
+}
+#address_checkbox {
+    width: auto;
+    margin-top:5px;
+}
+div#same_address p
+{
+/* height: 30px;
+font-size: 15px; */
+margin-left: 5px;
+/* margin-top: 4px; */
+}
+div#account_button
+{
+    margin: 12px;
+    width: auto;
+    text-align: center;
+}
+section.cartpage
+{
+    margin-top: 49px;
+}
+
+
+div.faq #span1,#span2,#span3,#span4
+{
+    width:20px;
+}
+@media screen and (max-width:976px) {
+    section#Main
+    {
+        /* width:80%; */
+        width: auto;
+        margin-top: 40px;
+    }
+    #Main #Registration_account_form 
+    {
+        margin:auto;
+    }
+div#Address_div,div#Correspondence_address_div
+{
+    display: block;
+    grid-row-gap: 8px;
+    justify-content: center;
+}    
+div#same_address p
+{
+    width: max-content;
+    font-size: 12px;
+}
+div#account_button
+{
+    margin: 12px;
+    width: auto;
+    text-align: center;
+    padding-bottom: 12px;
+}
+section.side_naviagtion
+{
+    width: auto;
+    margin: 0px 20px;
+    padding: 10px;
+}
+section.ShippingDetail_section
+{
+    width: 80%;
+}
+}
+
+@media screen and (max-width:576px) {
+    section#Main
+    {
+        /* width:98%; */
+        width: auto;
+        margin-top: 40px;
+    }
+    form#Registration_account_form {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    div#same_address p {
+        font-size: 12px;
+        height: auto;
+        margin: auto;
+    }
+}
+
